@@ -1,0 +1,159 @@
+//Global Styles Start
+body {
+  font-family: $raleway-font;
+  color: $text-color;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  color: $title-color;
+  font-family: $raleway-font !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:focus {
+    text-decoration: none;
+    color: $text-color;
+    outline: 0;
+  }
+}
+
+::-moz-selection {
+  background: $brand-primary;
+  color: #fff;
+  text-shadow: none;
+  outline: none;
+}
+
+::selection {
+  background: $brand-primary;
+  color: #fff;
+  text-shadow: none;
+  outline: none;
+}
+
+.btn {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn-primary {
+  font-size: 14px;
+  font-style: normal !important;
+  line-height: 17px;
+  margin: 0;
+  padding: 12px 25px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #fff !important;
+  border: 0;
+  background: $brand-primary;
+  text-shadow: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+
+  &:hover {
+    background: #666;
+    color: #fff !important;
+  }
+
+}
+
+// Navbar Fixed Top
+.navbar-fixed-top {
+  position: fixed !important;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 1100;
+  background-color: #000;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  animation-duration: .8s;
+  -webkit-animation-duration: .8s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+.footer-title {
+  margin-bottom: 40px;
+  h3 {
+    font-size: 18px;
+    color: #2a2a2a;
+    position: relative;
+  }
+}
+.parallax {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+//FontAwesome override start
+.fa-ul {
+  li {
+    padding: 5px 0;
+
+    .fa-li {
+      margin-top: 8px;
+      color: $brand-primary;
+    }
+  }
+}
+.shadow {
+  box-shadow: -25px 0 30px -15px rgba(0, 0, 0, 0.15), 25px 0 30px -15px rgba(0, 0, 0, 0.15);
+}
+
+.section-title {
+  margin-bottom: 40px;
+  h2 {
+    font-size: 45px;
+    color: #2b2b2b;
+  }
+}
+
+.left-title {
+  margin-bottom: 30px;
+  h2 {
+    font-size: 45px;
+    color: #2b2b2b;
+  }
+}
+
+//Global Styles End

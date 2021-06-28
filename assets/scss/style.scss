@@ -1,0 +1,258 @@
+/*
+Project Name: Seana Group
+Developer: TheShahriyar
+Developer Email: shahriyar.31dec@gmail.com
+*/
+
+
+//------------------------------------
+// Imported File
+//------------------------------------
+
+@import 'variable';
+@import 'global-styles';
+@import 'navbar';
+
+// Header Section
+.header-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+//-------------------------------------
+// Start Banner Section
+//-------------------------------------
+
+.banner-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner-slider {
+  .swiper-pagination {
+    text-align: left;
+
+    .swiper-pagination-bullet {
+      width: 20px;
+      height: 20px;
+      margin: 0 10px;
+      background-color: rgba($color: #fff, $alpha: 0.7);
+
+      &.swiper-pagination-bullet-active {
+        background-color: $brand-primary;
+      }
+    }
+  }
+}
+
+.slider-content {
+  padding: 350px 0 130px;
+  h2 {
+    font-size: 56px;
+    color: #fff;
+  }
+}
+
+.feature-section {
+  background-color: rgba($color: #fff, $alpha: 0.1);
+  padding: 25px 0 25px 20px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.feature {
+  padding: 0 30px;
+  border-right: 1px solid rgba($color: #fff, $alpha: 0.3);
+
+  &:last-child {
+    border-right: 0;
+  }
+
+  img {
+    margin-bottom: 20px;
+  }
+  h4 {
+    color: #fff;
+    font-size: 18px;
+  }
+}
+
+
+
+//---------------------------------
+// Start Service Section
+//---------------------------------
+.service-section {
+  padding: 60px 0;
+  background-color: #f8f8fb;
+}
+
+.service-item {
+  display: inline-block;
+  margin-bottom: 60px;
+
+  >img {
+    //z-index: -1;
+    position: relative;
+  }
+
+  .service-name {
+    background-color: #fff;
+    width: 70%;
+    padding: 50px 90px 10px 35px;
+    margin-top: -100px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    position: relative;
+    z-index: 1;
+
+    h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    svg {
+      stroke: $brand-primary;
+      stroke-width: 20;
+      stroke-linecap:round;
+      stroke-miterlimit:10;
+      width: 75px;
+      margin-left: -15px;
+    }
+  }
+
+  &:hover {
+    .service-name {
+      background-color: $brand-primary;
+      h3 {
+        color: #fff;
+      }
+
+      svg {
+        stroke: #fff;
+      }
+    }
+  }
+}
+
+
+//-------------------------
+// Call To Action
+//-------------------------
+.call-to-action {
+  padding: 90px 0;
+
+  .call-to-desc {
+    p {
+      font-size: 26px;
+      line-height: 36px;
+      margin-bottom: 50px;
+    }
+
+    a {
+      font-size: 24px;
+      color: $brand-primary;
+      font-weight: 500;
+
+      svg {
+        stroke: $brand-primary;
+        stroke-width: 20;
+        stroke-linecap:round;
+        stroke-miterlimit:10;
+        width: 35px;
+        //margin-left: -15px;
+      }
+    }
+  }
+}
+
+
+
+//---------------------------------------
+// Start Gallery Section
+//---------------------------------------
+
+.gallery-section {
+  padding: 75px 0;
+  position: relative;
+  overflow: hidden;
+
+  .swiper-container {
+    overflow: inherit;
+
+    .swiper-slide {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.gallery-arrow {
+  position: relative;
+  margin-left: -130%;
+  padding-left: 130%;
+  background: #f8f8fb;
+  z-index: 999;
+  height: 100%;
+}
+
+.gallery-slider-arrow {
+
+  .swiper-button-next {
+    top: 17%;
+    right: 24%;
+
+    &::after {
+      content: url(../images/arrow-right.png);
+    }
+  }
+
+  .swiper-button-prev {
+    top: 17%;
+    left: 58%;
+
+    &::after {
+      content: url(../images/arrow-left.png);
+    }
+  }
+}
+
+
+
+//--------------------------------------
+// Start Footer Section
+//--------------------------------------
+
+.footer-section {
+  padding: 60px 0;
+}
+
+.footer-address {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.copyright-section {
+  padding: 30px 0;
+
+  p {
+    font-size: 14px;
+    color: #8f8f8f;
+    margin-bottom: 0;
+  }
+
+  .credit {
+    text-align: right;
+    a {
+      color: #8f8f8f;
+      &:hover {
+        color: $brand-primary;
+      }
+    }
+  }
+}
